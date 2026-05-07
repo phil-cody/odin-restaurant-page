@@ -51,7 +51,7 @@ export default {
         test: /\.(png|jpg|jpeg|svg|gif|webp)$/i,
         type: "asset/resource",
         generator: {
-          filename: 'img/[hash][ext]'
+          filename: 'img/[name][ext]'
         }
       },
       {
