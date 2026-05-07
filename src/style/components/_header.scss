@@ -1,0 +1,48 @@
+@use "../base/fonts" as *;
+@use "../base/variables" as *;
+
+header {
+  margin: 0 auto;
+  background-color: $bg-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  max-width: 1440px;
+  font-family: "Oswald", sans-serif;
+  border-bottom: 1px solid $grey;
+
+  .logo {
+    width: 100px;
+    height: 48px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  li button {
+    height: 100%;
+    box-shadow: 0 0 10px 3px $grey;
+
+    &:hover {
+      box-shadow: 0 0 10px 3px $grey inset;
+    }
+
+    &.active {
+      background-color: $green;
+      color: $bg-color;
+    }
+  }
+
+  #contact-us {
+    background-color: $accent-color;
+    box-shadow: 0 0 10px 3px $grey;
+
+    &:hover {
+      box-shadow: 0 0 10px 3px $grey inset;
+    }
+  }
+}

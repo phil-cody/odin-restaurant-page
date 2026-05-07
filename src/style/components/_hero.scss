@@ -1,0 +1,66 @@
+@use "../base/variables" as *;
+@use "../base/fonts" as *;
+
+.hero {
+  position: relative;
+  padding: 143px 20px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/img/hero-bg.webp);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto calc(100vh - 79px);
+  font-family: "Oswald", sans-serif;
+
+  &__text {
+    position: relative;
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .slogan {
+      color: $accent-color;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    .title {
+      color: $bg-color;
+      font-size: 100px;
+      font-weight: 500;
+      line-height: 105px;
+    }
+
+    .subtitle {
+      color: $bg-color;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 36px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        color: $bg-color;
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 62px;
+      }
+    }
+
+    .order-btn {
+      background-color: #ee284b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 17px;
+      font-weight: 600;
+      max-width: 250px;
+      padding: 15px 30px;
+      color: $bg-color;
+    }
+  }
+}

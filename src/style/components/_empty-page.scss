@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+@use '../base/fonts' as *;
+
+.empty-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $grey;
+
+  h1 {
+    font-size: 100px;
+    font-family: 'Fredoka', sans-serif;
+  }
+}
